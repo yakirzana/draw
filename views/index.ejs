@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Draw</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      let users =  <%- JSON.stringify(users) %>;
+    </script>
+    <script src="/javascripts/draw.js"></script>
+  </head>
+  <body>
+
+  <div id="info"></div>
+
+  <button type="button" onclick="return startDraw();">התחל הגרלה</button>
+
+  <div id="selected"></div>
+  <div id="result"></div>
+
+  </body>
+</html>
